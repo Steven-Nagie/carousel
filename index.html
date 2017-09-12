@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+  <head>
+    <meta charset="utf-8">
+    <title>Picture Carousel with Gulp</title>
+    <!-- <link rel="stylesheet" href="./dist/styles.css" media="screen" title="no title"> -->
+    <link rel="stylesheet" href="./styles/stevensreset.css" media="screen" title="no title">
+    <link rel="stylesheet" href="./styles/style.css" media="screen" title="no title">
+  </head>
+  <body ng-controller='mainCtrl'>
+
+    <div class="carousel">
+      <img  class="one" ng-repeat="photo in photos" src="{{photo}}"></img>
+      <img  class="two" ng-repeat="photo in photos" src="{{photo}}"></img>
+      <!-- <img  class="three" ng-repeat="photo in photos" src="{{photo}}"></img> -->
+    </div>
+
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+  <!-- <script type="text/javascript" src="./dist/js/bundle.js"></script> -->
+  <script src="./js/app.js"></script>
+  <script src="./js/mainCtrl.js"></script>
+  <script src="./js/imgService.js"></script>
+</html>

@@ -1,0 +1,28 @@
+body {
+  overflow: hidden;
+}
+
+.box1 {
+  width: 10vw;
+  height: 10vh;
+}
+
+.carousel {
+  position: relative;
+  top: 33vh;
+  width: 333vw;
+  height: 34vh;
+  display: flex;
+  flex-direction: row;
+  -webkit-animation: slide 1s ease 3s infinite;
+  animation: slide 1s ease 3s infinite;
+}
+
+@keyframes slide {
+  transform: translate(-100%, -100%);
+}
+
+img {
+  width: 34vw;
+  height: 34vh;
+}

@@ -1,0 +1,86 @@
+body {
+  overflow: hidden;
+}
+
+.box1 {
+  width: 10vw;
+  height: 10vh;
+}
+
+.carousel {
+  position: relative;
+  top: 33vh;
+  width: 100vw;
+  height: 34vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  /*-webkit-animation: slide 30s ease 3s infinite;
+  animation: slide 5s ease 3s infinite,
+    delayyeeed 3s infinite;*/
+}
+
+.one {
+  /*position: absolute;
+  left: -100%;*/
+  -webkit-animation: slide 30s ease infinite;
+  animation: slide 30s ease infinite;
+}
+
+.two {
+  /*position: absolute;
+  left: 0;*/
+  -webkit-animation: slide 30s ease infinite;
+  animation: slide 30s ease infinite;
+}
+
+.three {
+  /*position: absolute;
+  left: 100%;*/
+  -webkit-animation: slide 30s ease infinite;
+  animation: slide 30s ease infinite;
+}
+
+@-webkit-keyframes delayyeeed {
+  0% {transform: translateY()}
+  50% {transform: translateY(-25vw)}
+}
+
+/*@keyframes slide {
+  0%   { transform: translateX(0); }
+  33%  {transform: translateX(-100vw)}
+  66% {transform: translateX(-200vw)}
+  100% { transform: translateX(-300vw); }
+}*/
+
+@keyframes slide {
+  0%   { transform: translateX(0); }
+  33%  {transform: translateX(-100vw)}
+  66% {transform: translateX(-200vw)}
+  100% { transform: translateX(-300vw); }
+}
+
+/*@-webkit-keyframes slide {
+  0% {transform: translateX()}
+  10% {transform: translateX(-100vw)}
+  20% {transform: translateX(-100vw)}
+  30% {transform: translateX(-200vw)}
+  40% {transform: translateX(-200vw)}
+  50% {transform: translateX(-300vw)}
+  60% {transform: translateX(-300vw)}
+}
+
+@keyframes slide {
+  0% {transform: translateX()}
+  10% {transform: translateX(-100vw)}
+  20% {transform: translateX(-100vw)}
+  30% {transform: translateX(-200vw)}
+  40% {transform: translateX(-200vw)}
+  50% {transform: translateX(-300vw)}
+  60% {transform: translateX(-300vw)}
+}*/
+
+img {
+  width: calc(100vw/3);
+  height: 34vh;
+}
